@@ -1,16 +1,20 @@
 chrome.storage.local.get("savedData", (result) => {
     const savedData = result.savedData || [];
 
+    var textMessage='';
     savedData.forEach((entry) => {
         const regex = new RegExp(entry.selectedText, 'gi');
         const pageText = document.body.innerText;
         
         if (entry.alertEnabled && regex.test(pageText)) {
-            alert(`頁面中出現了關鍵字: ${entry.selectedText}`);
+            textMessage=textMessage+'． '+entry.selectedText+'\n';
         }
 
         highlightText(document.body, regex, entry.highlightColor || 'yellow', entry.fontSizeMultiplier || 1);
     });
+    if(textMessage!='' && textMessage!=null && textMessage!=undefined && textMessage.length>0){ 
+        alert(`頁面中出現了關鍵字: \n${textMessage}`);
+    }
 });
 
 function highlightText(element, regex, highlightColor, fontSizeMultiplier) {
