@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Highlighter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 500px;  /* 設定寬度 */
+        height: 600px; /* 設定高度 */
+      }
+      li {
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .attributes {
+          margin-left: 10px;
+      }
+      label, select, input[type="checkbox"], input[type="color"] {
+          margin-right: 10px;
+      }
+      button {
+        margin-left: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>已儲存的關鍵字</h1>
+    <ul id="savedItems"></ul>
+    <button id="downloadBtn">下載資料</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
