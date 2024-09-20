@@ -1,6 +1,21 @@
 # TextHighlighter
 將網頁中被包含文字，對其highlight或變色或放大字體等等
 
+# 安裝方式
+- 將檔案下載至你的電腦中
+- 開啟Chrome擴充元件畫面
+  
+  ![image](https://github.com/user-attachments/assets/8ac991c8-ec17-4959-a7c7-62ac264fd539)
+  
+- 啟用開發人員
+  
+  ![image](https://github.com/user-attachments/assets/8f215f7f-15af-40db-8e7d-891cc7013efe)
+
+- 載入未封裝項目，選取你下載的那個資料夾
+  
+  ![image](https://github.com/user-attachments/assets/8d96f84c-7288-4dc8-88fb-332368737230)
+
+
 # 使用方式
 
 ### 使用滑鼠選取關鍵字
