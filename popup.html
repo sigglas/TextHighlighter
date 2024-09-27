@@ -31,10 +31,26 @@
     </style>
   </head>
   <body>
+    <h1>設定</h1>
+    <form id="settingsForm">
+       <div id="settings">        
+        <label for="apiUrl">API URL</label>
+        <input type="text" id="apiUrlInput" name="apiUrlInput" class="attributes">
+        <br>
+        <label for="apiKey">API Key</label>
+        <input type="text" id="apiKeyInput" name="apiKeyInput" class="attributes">
+        <br>        
+       </div>
+    </form>
+    <button id="saveBtn">儲存設定</button>
+
+     
+
     <h1>已儲存的關鍵字</h1>
     <ul id="savedItems"></ul>
     <button id="downloadBtn">下載資料</button>
 
     <script src="popup.js"></script>
+    <script src="popup_set.js"></script>
   </body>
 </html>
